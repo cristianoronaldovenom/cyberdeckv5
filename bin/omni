@@ -1,0 +1,15 @@
+#!/bin/sh
+# OMNI launcher — prefer the venv interpreter this tree was installed into,
+# fall back to whatever python3 is on PATH.
+set -eu
+HERE=$(cd "$(dirname "$0")" && pwd)
+for candidate in \
+    "$HERE/../.venv/bin/python3" \
+    "$HOME/.local/share/omni-venv/bin/python3" \
+    /opt/omni-venv/bin/python3
+do
+    if [ -x "$candidate" ]; then
+        exec "$candidate" -m omni.cli "$@"
+    fi
+done
+exec python3 -m omni.cli "$@"

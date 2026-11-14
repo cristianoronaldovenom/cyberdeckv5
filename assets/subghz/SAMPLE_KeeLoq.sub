@@ -1,0 +1,11 @@
+Filetype: Flipper SubGhz Key File
+Version: 1
+Frequency: 433920000
+Preset: FuriHalSubGhzPreset2FSKDev476Async
+Protocol: KeeLoq
+Bit: 64
+Key: 10 2C 5B 1F 83 4A 23 ED
+TE: 400
+Manufacture: Unleashed-Pi Demo
+CounterMode: 2
+Repeat: 3

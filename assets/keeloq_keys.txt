@@ -1,0 +1,16 @@
+# Unleashed-Pi KeeLoq manufacturer keys
+#
+# FORMAT 1 (ours):     Name:KeyHex:type[:seed]
+#   type = simple | normal | secure | magic_xor | magic_serial1-3 | auto
+#
+# FORMAT 2 (Flipper):   KeyHex:LEARNING:Name
+#   LEARNING: 1 simple, 2 normal, 3 secure, 4 magic_xor,
+#             5/6/7 magic_serial_type1/2/3, 0 auto
+#
+# The loader understands BOTH, so you can paste any plaintext Flipper
+# `keeloq_mfcodes_user` / community key database straight in here — that is
+# what unlocks every KeeLoq-based car / alarm / barrier brand (Kia, Hyundai,
+# VW/Audi/Skoda/Seat, Ford, PSA, Subaru, Fiat, Chamberlain, Liftmaster,
+# BFT, Nice, Beninca, Allmatic, Doorhan, Aprimatic and hundreds more).
+#
+Unleashed-Pi Demo:0x1122334455667788:simple
